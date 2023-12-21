@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Walland's Portfolio</title>
+  </head>
+  <body>
+    <!--navigation bar alongside title of page-->
+    <header>
+      <h1>Alexander Walland</h1>
+      <nav>
+        <ul>
+          <!--links to corresponding parts of page-->
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+          <li>
+            <a
+              href="https://docs.google.com/document/d/1cxB9FnwI9OufTwiU_4CaTDIDpU7XKtrD/edit?usp=sharing&ouid=103389772454062363642&rtpof=true&sd=true"
+              target="_blank"
+              >CV</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--banner photo with avatar image-->
+    <div class="hero-background">
+      <img src="./images/avatar.png" height="200px" alt="Profile Pic" />
+    </div>
+    <!--about me section-->
+    <div id="about-me">
+    <!--create div with class that will apply to all headings-->
+      <div class="heading">
+        <h2>About Me</h2>
+      </div>
+      <div class="content">
+        <p>
+          I am learning front end web development and this website is a
+          dedication to what I have learnt and what I will continue to learn.<br />
+          This site is a portfolio of some of my work as well as ways you can
+          contact me.
+        </p>
+      </div>
+    </div>
+    <div id="projects">
+      <div class="heading">
+        <h2>My projects</h2>
+      </div>  
+      <!--flex box div for projects to be laid out on screen-->
+      <div class="pGrid">
+        <div class="jsQuiz">
+           <a href="https://github.com/alexwalland1997/JavascriptQuiz" target="_blank">
+            <!--class for info box inside image of projects-->
+            <div class="pInfo">
+            <h3>Javascript Quiz</h3>
+            <p>Javascript</p>
+           </div> 
+           </a>
+        </div>
+        <div class="pwGenerator">
+            <a href="https://github.com/alexwalland1997/password-generator" target="_blank">
+            <div class="pInfo">
+             <h3>Password Generator</h3>
+             <p>Javascript</p>
+            </div> 
+            </a>
+         </div>
+         <div class="bootstrap">
+            <a href="https://github.com/alexwalland1997/AlexanderWallandBootstrap" target="_blank">
+            <div class="pInfo">
+             <h3>Bootstrap Portfolio Site</h3>
+             <p>Bootstrap</p>
+            </div> 
+            </a>
+         </div>
+         <div class="mso">
+            <a href="https://github.com/alexwalland1997/MarketingSiteOptimization" target="_blank">
+            <div class="pInfo">
+             <h3>Marketing Search Optimisation</h3>
+             <p>HTML</p>
+            </div> 
+            </a>
+         </div>
+         <div class="gGame">
+            <a href="https://github.com/alexwalland/Guessing-Game" target="_blank">
+            <div class="pInfo">
+             <h3>Guessing Game</h3>
+             <p>Java</p>
+            </div> 
+            </a>
+         </div>
+      </div>
+    </div>
+  </body>
+</html>
