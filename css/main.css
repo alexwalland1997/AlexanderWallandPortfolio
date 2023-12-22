@@ -1,0 +1,247 @@
+:root {
+    /*set global colours */
+    --theme: #03037d;
+    --mainText: rgba(255, 255, 255, 0.925);
+  }
+  
+  body {
+    background-color: var(--theme);
+    height: 100%;
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+  }
+
+  /*set text colour */
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-left: 50px;
+  color: var(--mainText);
+}
+
+h2 {
+    margin-right:10px;
+}
+
+/*set contact number font colour and to bold*/
+li{
+    color: var(--mainText);
+    font-weight: bold;
+  }
+
+/*change layout based on screen size*/  
+@media only screen and (max-width: 800px) {
+    nav {
+      display: none !important;
+    }
+
+    #about-me{
+        width: 90% !important;
+        height: 200px !important;
+    }
+
+    .heading {
+      width: 100% !important;
+      text-align: center !important; 
+      border-right: none !important;
+    }
+
+    .content {
+        width: 100% !important;
+        text-align: center !important;
+        padding-top: 50px;
+    }
+
+    .pGrid{
+        width: 100% !important;
+        padding-top: 75px !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+    }
+
+    .pwGenerator,
+    .bootstrap,
+    .mso,
+    .gGame {
+        height: 200px !important;
+        flex: 60% !important;
+    }
+}
+
+nav {
+    position: absolute;
+    right: 10px;
+  }
+
+/*set contact number font colour and to bold*/
+li{
+    color: var(--mainText);
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 150%;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    min-width: 400px;
+    list-style-type: none;
+  }
+
+  /*create interactive links*/
+a {
+    color: var(--mainText);
+    text-decoration: none;
+    font-weight: 700;
+    position: relative;
+  }
+
+  nav a::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+  }
+  
+  nav a:hover::before {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  /*set background image */
+  .hero-background {
+    background-image: url("../images/hero-bg.jpeg");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  /*place profile pic over background*/
+  .hero-background img {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    border: 3px solid var(--themes);
+  }
+
+#about-me {
+    padding-top: 25px;
+    width: 100%;
+    height: 100px;
+}
+
+.heading {
+    position: absolute;
+    display: block;
+    width: 15%;
+    height: auto;
+    float: left;
+    text-align: right;
+    margin-right: 5px;
+    border-right: 3px solid white;
+}
+
+.content {
+    width: 80%;
+    display: block;
+    float: right;
+    margin-top: 5px;
+    text-align: left;
+}
+
+#projects {
+    width: 100%;
+    height: 800px;
+}
+
+.pGrid {
+    width: 80%;
+    display: flex;
+    float: right;
+    flex-wrap: wrap;
+}
+
+.jsQuiz {
+    flex: 100%;
+    height: 250px;
+    background-image: url("../images/quiz.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-start;
+}
+
+.pwGenerator {
+    margin-top: 25px;
+    flex: 45%;
+    margin-right: 10%;
+    height: 250px;
+    background-image: url("../images/passwordGenerator.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-start;
+}
+
+.bootstrap{
+    margin-top: 25px;
+    flex: 45%;
+    height: 250px;
+    background-image: url("../images/bootstrap.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-start;
+}
+
+.mso {
+    margin-top: 25px;
+    flex: 45%;
+    margin-right: 10%;
+    height: 250px;
+    background-image: url("../images/mso.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-start;
+}
+
+.gGame {
+    margin-top: 25px;
+    flex: 45%;
+    background-image: url("../images/guessing-game.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-start;
+}
