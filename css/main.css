@@ -61,6 +61,10 @@ li{
         padding-top: 50px;
     }
 
+    #projects {
+      height: 1200px !important;
+    }
+
     .pGrid{
         width: 100% !important;
         padding-top: 75px !important;
@@ -76,6 +80,18 @@ li{
       background-position: center !important;
         height: 200px !important;
         flex: 60% !important;
+    }
+
+    .links {
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    #contact-me ul {
+      display: block !important;
+      list-style: none;
+      line-height: 2rem;
+      padding-bottom: 25px;
     }
 }
 
@@ -173,6 +189,7 @@ a {
 #projects {
     width: 100%;
     height: 800px;
+    padding-bottom: 25px;
 }
 
 .pGrid {
@@ -250,4 +267,27 @@ a {
     align-items: flex-end;
     justify-content:flex-start;
     background-size: cover;
+}
+
+#contact-me {
+  width: 100%;
+  height: 200px;
+  display: block;
+  padding-top: 25px;
+}
+
+#contact-me ul {
+  width: 60%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  list-style-type: none;
+  padding-right: 100px;
+}
+
+footer{
+  text-align: center;
+  padding-bottom: 10px;
 }
