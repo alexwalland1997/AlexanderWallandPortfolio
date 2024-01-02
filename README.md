@@ -6,7 +6,7 @@ The sole purpose of this website is so that I can display any of my current proj
 
 ## Installation
 
-In order to run this site you need to download this repo and open the index.html in the browser of your choice. Alternatively the code can be located at https://alexwalland1997.github.io/PortfolioSite/
+In order to run this site you need to download this repo and open the index.html in the browser of your choice. Alternatively the code can be located at https://alexwalland1997.github.io/AlexanderWallandPortfolio/
 
 ## Usage
 
